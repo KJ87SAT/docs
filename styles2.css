@@ -13,6 +13,92 @@ body {
     color: #E0E0E0;
     line-height: 1.6;
     display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ========================== */
+/*       ヘッダーの設定       */
+/* ========================== */
+.navbar {
+    background-color: #1E1E2E;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #3A3D5B;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.logo-img {
+    width: 32px;
+    height: 32px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #A6A9B6;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.language-switch {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #A6A9B6;
+    font-weight: bold;
+}
+
+.search-btn {
+    background: #3A3D5B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.search-btn:hover {
+    background: #4855C8;
 }
 
 /* ========================== */
@@ -21,6 +107,7 @@ body {
 .docs-container {
     display: flex;
     width: 100%;
+    flex-grow: 1;
 }
 
 /* サイドバー */
@@ -30,6 +117,10 @@ body {
     padding: 20px;
     height: 100vh;
     position: fixed;
+    top: 60px; /* ヘッダー分のスペース */
+    left: 0;
+    overflow-y: auto;
+    border-right: 1px solid #3A3D5B;
 }
 
 .sidebar h2 {
@@ -52,7 +143,7 @@ body {
     padding: 10px;
     display: block;
     border-radius: 5px;
-    transition: 0.3s;
+    transition: background 0.3s, color 0.3s;
 }
 
 .sidebar ul li a:hover,
@@ -66,6 +157,8 @@ body {
     margin-left: 250px;
     padding: 40px;
     width: calc(100% - 250px);
+    min-height: 100vh;
+    background-color: #181818;
 }
 
 .content-section {
@@ -105,5 +198,80 @@ table th {
 
 table td {
     background-color: #1E1E2E;
+    color: #A6A9B6;
+}
+
+/* ========================== */
+/*       フッターの設定       */
+/* ========================== */
+.footer {
+    background-color: #1E1E2E;
+    color: #A6A9B6;
+    padding: 2rem 1rem;
+    margin-top: auto;
+    width: 100%;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+}
+
+/* フッターのリンクセクション */
+.footer-links h4 {
+    color: #FFF;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #A6A9B6;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #FFF;
+}
+
+/* フッターの情報セクション */
+.footer-info h4 {
+    color: #FFF;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer-info p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* フッターのボトム部分 */
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
     color: #A6A9B6;
 }
