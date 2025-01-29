@@ -3,52 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ドキュメント</title>
+    <title>ProBot ドキュメント</title>
     <link rel="stylesheet" href="styles2.css">
     <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <div class="logo">🔵 ProBot ドキュメント</div>
+        <div class="logo">ProBot ドキュメント</div>
         <nav>
-            <ul>
-                <li><a href="#">はじめに</a></li>
-                <li><a href="#">ダッシュボード</a></li>
-                <li><a href="#">サポートに連絡</a></li>
-            </ul>
+            <a href="#">はじめに</a>
+            <a href="#">ダッシュボード</a>
+            <a href="#">サポートに連絡</a>
         </nav>
-        <div class="search-box">
+        <div class="search">
             <input type="text" placeholder="検索">
         </div>
     </header>
+
     <div class="container">
-        <aside class="sidebar">
-            <ul>
-                <li class="active">はじめに</li>
-                <li>最初のステップ</li>
-                <li>ProBotのセットアップ</li>
-                <li>ダッシュボード設定</li>
-                <li>よくある質問</li>
-                <li>プレミアム</li>
-                <li>コマンド</li>
-                <li>メンバーシップ</li>
-                <li>変数</li>
-                <li>モジュール</li>
+        <aside>
+            <ul class="sidebar">
+                <li class="active" data-target="intro">はじめに</li>
+                <li data-target="step">最初のステップ</li>
+                <li data-target="setup">ProBotのセットアップ</li>
+                <li data-target="dashboard">ダッシュボード設定</li>
+                <li data-target="faq">よくある質問</li>
+                <li data-target="premium">プレミアム</li>
+                <li data-target="commands">コマンド</li>
+                <li data-target="membership">メンバーシップ</li>
+                <li data-target="variables">変数</li>
+                <li data-target="modules">モジュール</li>
             </ul>
         </aside>
+
         <main>
-            <h1>はじめに</h1>
-            <p>ProBotは、高度にカスタマイズ可能な多機能Botです。</p>
-            <h2>ドキュメントについて</h2>
-            <p>このドキュメントでは、ProBotの使用方法を説明します。</p>
-            <h2>モジュール</h2>
-            <p>左側のサイドバーからモジュールを選択してください。</p>
-            <h2>コマンド</h2>
-            <p>すべてのProBotコマンド情報を参照できます。</p>
+            <section id="intro" class="content active">
+                <h1>はじめに</h1>
+                <p>ProBotは、高度にカスタマイズ可能な多機能Botです。</p>
+            </section>
+            <section id="step" class="content">
+                <h1>最初のステップ</h1>
+                <p>ここでは、ProBotを使い始めるための基本的な手順を紹介します。</p>
+            </section>
+            <section id="setup" class="content">
+                <h1>ProBotのセットアップ</h1>
+                <p>セットアップ方法について説明します。</p>
+            </section>
+            <!-- 他のセクションも同様に追加 -->
         </main>
     </div>
-    <footer>
-        <p>&copy; 2025 ProBot Docs</p>
-    </footer>
 </body>
 </html>
