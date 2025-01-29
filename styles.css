@@ -1,0 +1,125 @@
+/* styles.css */
+
+/* 全体のスタイル */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1E1E2F;
+    color: #FFF;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ナビゲーションバー */
+.navbar {
+    background-color: #2C2F48;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #3A3D5B;
+}
+
+.navbar .logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #A6A9B6;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #FFF;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-btn {
+    background: #3A3D5B;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* Heroセクション */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+    background: #1E1E2F;
+    text-align: left;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.version {
+    display: inline-block;
+    background: #3A3D5B;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #A6A9B6;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.hero p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background: #5865F2;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background: #4855C8;
+}
+
+/* 画像スタイル */
+.hero-image img {
+    max-width: 300px;
+    height: auto;
+}
