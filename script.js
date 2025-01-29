@@ -11,7 +11,14 @@ document.addEventListener("DOMContentLoaded", function() {
         sidebarLinks.forEach(link => {
             link.classList.remove("active");
         });
-        document.querySelector(`[data-section="${sectionId}"]`).classList.add("active");
+
+        const activeLink = document.querySelector(`[data-section="${sectionId}"]`);
+        if (activeLink) {
+            activeLink.classList.add("active");
+        }
+
+        // URLのハッシュを更新（履歴に残さない）
+        history.replaceState(null, null, `#${sectionId}`);
     }
 
     sidebarLinks.forEach(link => {
@@ -22,6 +29,11 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // 最初のステップをデフォルトで表示
-    showSection("step1");
+    // 初回読み込み時にURLのハッシュを確認し、適切なセクションを表示
+    const initialSection = location.hash ? location.hash.substring(1) : "step1";
+    if (document.getElementById(initialSection)) {
+        showSection(initialSection);
+    } else {
+        showSection("step1");
+    }
 });
