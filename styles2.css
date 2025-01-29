@@ -12,7 +12,6 @@ body {
     background-color: #121212;
     color: #E0E0E0;
     line-height: 1.6;
-    display: block;  /* flex を削除 */
 }
 
 /* ========================== */
@@ -26,9 +25,19 @@ body {
     align-items: center;
     position: sticky;
     top: 0;
-    width: 100%;
     z-index: 100;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
 }
 
 .nav-links {
@@ -55,7 +64,7 @@ body {
 /*       ドキュメントページ   */
 /* ========================== */
 .docs-container {
-    display: flex;  /* コンテンツを横並びに */
+    display: flex;
     min-height: 100vh;
 }
 
@@ -64,34 +73,9 @@ body {
     width: 250px;
     background-color: #1E1E2E;
     padding: 20px;
-    color: white;
-    position: fixed;
     height: 100vh;
+    position: fixed;
     overflow-y: auto;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    margin: 10px 0;
-}
-
-.sidebar ul li a {
-    text-decoration: none;
-    color: #A6A9B6;
-    padding: 10px;
-    display: block;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.sidebar ul li a:hover,
-.sidebar ul li a.active {
-    background-color: #4C5FD5;
-    color: white;
 }
 
 /* メインコンテンツ */
@@ -119,22 +103,18 @@ table th {
     color: white;
 }
 
-table tr:nth-child(even) {
-    background-color: #24243E;
-}
-
-table tr:hover {
-    background-color: #34345C;
+table td {
+    background-color: #1E1E2E;
+    color: #A6A9B6;
 }
 
 /* ========================== */
 /*         フッター           */
 /* ========================== */
 .footer {
-    background-color: #1E1E2E;
+    background-color: #15162B;
+    color: #A6A9B6;
     text-align: center;
     padding: 20px;
-    color: #A6A9B6;
-    width: 100%;
-    position: relative;
+    margin-top: auto;
 }
