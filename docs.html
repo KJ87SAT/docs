@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortify ドキュメント</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="docs-container">
+        <!-- サイドバー -->
+        <aside class="sidebar">
+            <h2>はじめに</h2>
+            <ul>
+                <li><a href="#" class="active" data-section="step1">最初のステップ</a></li>
+                <li><a href="#" data-section="setup">Fortifyのセットアップ</a></li>
+                <li><a href="#" data-section="dashboard">ダッシュボード設定</a></li>
+                <li><a href="#" data-section="faq">よくある質問</a></li>
+                <li><a href="#" data-section="premium">プレミアム</a></li>
+                <li><a href="#" data-section="commands">コマンド</a></li>
+            </ul>
+        </aside>
+
+        <!-- メインコンテンツ -->
+        <main class="docs-content">
+            <section id="step1" class="content-section active">
+                <h1>最初のステップ</h1>
+                <p>Fortifyを使い始めるための基本的な手順について説明します。</p>
+            </section>
+
+            <section id="setup" class="content-section">
+                <h1>Fortifyのセットアップ</h1>
+                <p>Fortifyをサーバーに導入する方法を解説します。</p>
+            </section>
+
+            <section id="dashboard" class="content-section">
+                <h1>ダッシュボード設定</h1>
+                <p>ダッシュボードの基本設定について説明します。</p>
+            </section>
+
+            <section id="faq" class="content-section">
+                <h1>よくある質問</h1>
+                <p>ユーザーからよく寄せられる質問への回答をまとめています。</p>
+            </section>
+
+            <section id="premium" class="content-section">
+                <h1>プレミアム</h1>
+                <p>プレミアム機能について詳しく説明します。</p>
+            </section>
+
+            <section id="commands" class="content-section">
+                <h1>コマンド</h1>
+                <div class="info-box">
+                    <p>スラッシュコマンドがデフォルトのボットプレフィックスです。</p>
+                    <p> [ ] の記号は必須引数を示し、( ) は任意です。</p>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>コマンド</th>
+                            <th>説明</th>
+                            <th>使用方法</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>/credits</td>
+                            <td>自分または他のユーザーのクレジットを表示</td>
+                            <td>/credits [ユーザー]</td>
+                        </tr>
+                        <tr>
+                            <td>/rep</td>
+                            <td>評価ポイントを与える</td>
+                            <td>/rep [ユーザー]</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
