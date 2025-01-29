@@ -37,3 +37,26 @@ document.addEventListener("DOMContentLoaded", function() {
         showSection("step1");
     }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll(".sidebar a");
+    const sections = document.querySelectorAll(".content-section");
+
+    links.forEach(link => {
+        link.addEventListener("click", function(e) {
+            e.preventDefault();
+
+            // 全てのリンクから active クラスを削除
+            links.forEach(l => l.classList.remove("active"));
+            this.classList.add("active");
+
+            // 全てのセクションを非表示
+            sections.forEach(section => section.classList.remove("active"));
+
+            // クリックされたリンクに対応するセクションを表示
+            const targetId = this.getAttribute("data-section");
+            document.getElementById(targetId).classList.add("active");
+        });
+    });
+});
+
