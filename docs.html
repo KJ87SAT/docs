@@ -3,101 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fortify ドキュメント</title>
+    <title>ドキュメント</title>
     <link rel="stylesheet" href="styles2.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-
-    <!-- ヘッダー -->
-    <header class="navbar">
-        <div class="container">
-            <div class="logo">
-                <img src="logo.png" alt="Fortify Logo" class="logo-img">
-                <span>Fortify Docs</span>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">ホーム</a></li>
-                    <li><a href="#">ドキュメント</a></li>
-                    <li><a href="#">サポート</a></li>
-                </ul>
-            </nav>
+    <header>
+        <div class="logo">🔵 ProBot ドキュメント</div>
+        <nav>
+            <ul>
+                <li><a href="#">はじめに</a></li>
+                <li><a href="#">ダッシュボード</a></li>
+                <li><a href="#">サポートに連絡</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="検索">
         </div>
     </header>
-
-    <div class="docs-container">
-        <!-- サイドバー -->
+    <div class="container">
         <aside class="sidebar">
-            <h2>はじめに</h2>
             <ul>
-                <li><a href="#" class="active" data-section="step1">最初のステップ</a></li>
-                <li><a href="#" data-section="setup">Fortifyのセットアップ</a></li>
-                <li><a href="#" data-section="faq">よくある質問</a></li>
-                <li><a href="#" data-section="premium">プレミアム</a></li>
-                <li><a href="#" data-section="commands">コマンド</a></li>
+                <li class="active">はじめに</li>
+                <li>最初のステップ</li>
+                <li>ProBotのセットアップ</li>
+                <li>ダッシュボード設定</li>
+                <li>よくある質問</li>
+                <li>プレミアム</li>
+                <li>コマンド</li>
+                <li>メンバーシップ</li>
+                <li>変数</li>
+                <li>モジュール</li>
             </ul>
         </aside>
-
-        <!-- メインコンテンツ -->
-        <main class="docs-content">
-            <section id="step1" class="content-section active">
-                <h1>最初のステップ</h1>
-                <p>Fortifyを使い始めるための基本的な手順について説明します。</p>
-            </section>
-
-            <section id="setup" class="content-section">
-                <h1>Fortifyのセットアップ</h1>
-                <p>Fortifyをサーバーに導入する方法を解説します。</p>
-            </section>
-
-            <section id="faq" class="content-section">
-                <h1>よくある質問</h1>
-                <p>ユーザーからよく寄せられる質問への回答をまとめています。</p>
-            </section>
-
-            <section id="premium" class="content-section">
-                <h1>プレミアム</h1>
-                <p>プレミアム機能につきましてはもうしばらくお待ちください。</p>
-            </section>
-
-            <section id="commands" class="content-section">
-                <h1>コマンド</h1>
-                <div class="info-box">
-                    <p>スラッシュコマンドがデフォルトのボットプレフィックスです。</p>
-                    <p>[ ] の記号は必須引数を示し、( ) は任意です。</p>
-                </div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>コマンド</th>
-                            <th>説明</th>
-                            <th>使用方法</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>/about</td>
-                            <td>Botの情報を表示します</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>/check_server</td>
-                            <td>指定されたサーバーIDにBotが所属しているか確認します</td>
-                            <td>/check_server [server_id]</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+        <main>
+            <h1>はじめに</h1>
+            <p>ProBotは、高度にカスタマイズ可能な多機能Botです。</p>
+            <h2>ドキュメントについて</h2>
+            <p>このドキュメントでは、ProBotの使用方法を説明します。</p>
+            <h2>モジュール</h2>
+            <p>左側のサイドバーからモジュールを選択してください。</p>
+            <h2>コマンド</h2>
+            <p>すべてのProBotコマンド情報を参照できます。</p>
         </main>
     </div>
-
-    <!-- フッター -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Fortify. All Rights Reserved.</p>
-        </div>
+    <footer>
+        <p>&copy; 2025 ProBot Docs</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
