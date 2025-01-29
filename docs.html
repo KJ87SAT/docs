@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProBot ドキュメント</title>
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="logo">ProBot ドキュメント</div>
+        <div class="logo">
+            <i class="fa-brands fa-discord"></i> ProBot ドキュメント
+        </div>
         <nav>
             <a href="#">はじめに</a>
             <a href="#">ダッシュボード</a>
@@ -17,22 +20,24 @@
         </nav>
         <div class="search">
             <input type="text" placeholder="検索">
+            <i class="fa fa-search"></i>
         </div>
+        <button id="sidebarToggle"><i class="fa fa-bars"></i></button>
     </header>
 
     <div class="container">
-        <aside>
+        <aside id="sidebar">
             <ul class="sidebar">
-                <li class="active" data-target="intro">はじめに</li>
-                <li data-target="step">最初のステップ</li>
-                <li data-target="setup">ProBotのセットアップ</li>
-                <li data-target="dashboard">ダッシュボード設定</li>
-                <li data-target="faq">よくある質問</li>
-                <li data-target="premium">プレミアム</li>
-                <li data-target="commands">コマンド</li>
-                <li data-target="membership">メンバーシップ</li>
-                <li data-target="variables">変数</li>
-                <li data-target="modules">モジュール</li>
+                <li class="active" data-target="intro"><i class="fa fa-book"></i> はじめに</li>
+                <li data-target="step"><i class="fa fa-play"></i> 最初のステップ</li>
+                <li data-target="setup"><i class="fa fa-cogs"></i> ProBotのセットアップ</li>
+                <li data-target="dashboard"><i class="fa fa-tachometer-alt"></i> ダッシュボード設定</li>
+                <li data-target="faq"><i class="fa fa-question-circle"></i> よくある質問</li>
+                <li data-target="premium"><i class="fa fa-gem"></i> プレミアム</li>
+                <li data-target="commands"><i class="fa fa-terminal"></i> コマンド</li>
+                <li data-target="membership"><i class="fa fa-user"></i> メンバーシップ</li>
+                <li data-target="variables"><i class="fa fa-code"></i> 変数</li>
+                <li data-target="modules"><i class="fa fa-box"></i> モジュール</li>
             </ul>
         </aside>
 
@@ -44,10 +49,6 @@
             <section id="step" class="content">
                 <h1>最初のステップ</h1>
                 <p>ここでは、ProBotを使い始めるための基本的な手順を紹介します。</p>
-            </section>
-            <section id="setup" class="content">
-                <h1>ProBotのセットアップ</h1>
-                <p>セットアップ方法について説明します。</p>
             </section>
             <!-- 他のセクションも同様に追加 -->
         </main>
