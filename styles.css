@@ -15,26 +15,49 @@ body {
     margin: 0 auto;
 }
 
-/* ナビゲーションバー */
+/* ヘッダー全体のスタイル */
 .navbar {
     background-color: #2C2F48;
-    padding: 1rem;
+    padding: 1rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #3A3D5B;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.navbar .logo {
+/* コンテナのレイアウト */
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ロゴ部分 */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
     font-size: 1.2rem;
     font-weight: bold;
-    color: #FFF;
 }
 
+.logo-img {
+    width: 32px;
+    height: 32px;
+}
+
+/* ナビゲーションリンク */
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     margin: 0;
     padding: 0;
 }
@@ -43,25 +66,41 @@ body {
     text-decoration: none;
     color: #A6A9B6;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #FFF;
+    color: white;
 }
 
+/* 右側の言語と検索ボタン */
 .navbar-right {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
+}
+
+.language-switch {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #A6A9B6;
+    font-weight: bold;
 }
 
 .search-btn {
     background: #3A3D5B;
-    color: #FFF;
+    color: white;
     border: none;
     border-radius: 5px;
     padding: 0.5rem 1rem;
     cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.search-btn:hover {
+    background: #4855C8;
 }
 
 /* Heroセクション */
