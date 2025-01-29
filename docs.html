@@ -12,31 +12,23 @@
     <header class="navbar">
         <div class="container">
             <div class="logo">
-                <img src="36bf62577e6793148f63b454b2af619d.png" alt="Fortify Logo" class="logo-img">
-                <span>Fortify ドキュメント</span>
+                <img src="logo.png" alt="Fortify ロゴ" class="logo-img">
+                <span>Fortify</span>
             </div>
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html">ホーム</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#premium">プレミアム</a></li>
-                    <li><a href="#contact">サポート</a></li>
+                    <li><a href="#">ドキュメント</a></li>
+                    <li><a href="#">サポート</a></li>
                 </ul>
             </nav>
-            <div class="navbar-right">
-                <div class="language-switch">
-                    <span>🈂</span>
-                    <span>日本語</span>
-                </div>
-                <button class="search-btn">🔍 検索</button>
-            </div>
         </div>
     </header>
 
     <div class="docs-container">
         <!-- サイドバー -->
         <aside class="sidebar">
-            <h2>はじめに</h2>
+            <h2>ドキュメント</h2>
             <ul>
                 <li><a href="#" class="active" data-section="step1">最初のステップ</a></li>
                 <li><a href="#" data-section="setup">Fortifyのセットアップ</a></li>
@@ -72,7 +64,7 @@
                 <h1>コマンド</h1>
                 <div class="info-box">
                     <p>スラッシュコマンドがデフォルトのボットプレフィックスです。</p>
-                    <p> [ ] の記号は必須引数を示し、( ) は任意です。</p>
+                    <p>[ ] の記号は必須引数を示し、( ) は任意です。</p>
                 </div>
                 <table>
                     <thead>
@@ -83,61 +75,12 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>/about</td>
-                            <td>Botの情報を表示します</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>/check_server</td>
-                            <td>指定されたサーバーIDにBotが所属しているか確認します</td>
-                            <td>/check_server [server_id]</td>
-                        </tr>
-                        <tr>
-                            <td>/member_count</td>
-                            <td>Botが参加しているサーバーのメンバー人数の合計を取得します</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>security_check</td>
-                            <td>サーバーの安全性を詳細にチェックします</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>serverinfo</td>
-                            <td>サーバーの詳細情報を表示します</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>set_mode</td>
-                            <td>緊急モードやロックダウンモードを設定できます</td>
-                            <td>/set_mode [mode]</td>
-                        </tr>
-                        <tr>
-                            <td>set_spam_setting</td>
-                            <td>サーバーのスパム対策設定を変更します</td>
-                            <td>/set_spam_setting (timeout) (spam_limit)...他3</td>
-                        </tr>
-                        <tr>
-                            <td>userinfo</td>
-                            <td>ユーザー情報を表示します</td>
-                            <td>/userinfo (member)</td>
-                        </tr>
-                        <tr>
-                            <td>verifier</td>
-                            <td>認証パネルを作成します（荒らしユーザー判断機能搭載）</td>
-                            <td>/verifier [role] [message]</td>
-                        </tr>
-                        <tr>
-                            <td>whitelist_add</td>
-                            <td>ユーザーをホワイトリストに追加します</td>
-                            <td>/whitelist_add [user]</td>
-                        </tr>
-                        <tr>
-                            <td>whitelist_remove</td>
-                            <td>ユーザーをホワイトリストから削除します</td>
-                            <td>/whitelist_remove [user]</td>
-                        </tr>                       
+                        <tr><td>/about</td><td>Botの情報を表示します</td><td></td></tr>
+                        <tr><td>/check_server</td><td>指定されたサーバーIDにBotが所属しているか確認します</td><td>/check_server [server_id]</td></tr>
+                        <tr><td>/member_count</td><td>Botが参加しているサーバーのメンバー人数の合計を取得します</td><td></td></tr>
+                        <tr><td>/security_check</td><td>サーバーの安全性を詳細にチェックします</td><td></td></tr>
+                        <tr><td>/serverinfo</td><td>サーバーの詳細情報を表示します</td><td></td></tr>
+                        <tr><td>/set_mode</td><td>緊急モードやロックダウンモードを設定できます</td><td>/set_mode [mode]</td></tr>
                     </tbody>
                 </table>
             </section>
@@ -147,27 +90,7 @@
     <!-- フッター -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-links">
-                    <h4>ドキュメント</h4>
-                    <ul>
-                        <li><a href="docs.html">はじめに</a></li>
-                        <li><a href="#faq">よくある質問</a></li>
-                        <li><a href="#commands">コマンド一覧</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>サポート</h4>
-                    <ul>
-                        <li><a href="#contact">お問い合わせ</a></li>
-                        <li><a href="#premium">プレミアム</a></li>
-                    </ul>
-                </div>
-                <div class="footer-info">
-                    <h4>Fortify Bot</h4>
-                    <p>© 2025 Fortify. All Rights Reserved.</p>
-                </div>
-            </div>
+            <p>&copy; 2025 Fortify. All rights reserved.</p>
         </div>
     </footer>
 
