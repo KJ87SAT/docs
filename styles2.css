@@ -1,12 +1,13 @@
-/* 全体のリセット */
+/* 🌟 全体のスタイルリセット */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
+/* 🌟 ボディ */
 body {
-    font-family: 'Arial', sans-serif;
     background-color: #121212;
     color: #e0e0e0;
     height: 100vh;
@@ -14,14 +15,17 @@ body {
     flex-direction: column;
 }
 
-/* ヘッダー */
+/* 🌟 ヘッダー */
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     background-color: #1e1e1e;
     padding: 15px 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo {
@@ -52,6 +56,7 @@ nav a {
     border: 1px solid #555;
     color: white;
     border-radius: 5px;
+    width: 150px;
 }
 
 .search i {
@@ -62,16 +67,18 @@ nav a {
     color: #ccc;
 }
 
-/* サイドバー */
+/* 🌟 サイドバー */
 .container {
     display: flex;
     flex: 1;
+    margin-top: 60px;
 }
 
 aside {
     width: 250px;
     background: #1e1e1e;
-    padding: 20px;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
     transition: 0.3s;
 }
 
@@ -85,6 +92,7 @@ aside {
     transition: background 0.3s;
     display: flex;
     align-items: center;
+    font-size: 14px;
 }
 
 .sidebar li i {
@@ -96,16 +104,11 @@ aside {
     border-radius: 5px;
 }
 
-/* メインコンテンツ */
+/* 🌟 メインコンテンツ */
 main {
     flex: 1;
     padding: 20px;
-    animation: fadeIn 0.3s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(5px); }
-    to { opacity: 1; transform: translateY(0); }
+    overflow-y: auto;
 }
 
 .content {
@@ -114,9 +117,15 @@ main {
 
 .content.active {
     display: block;
+    animation: fadeIn 0.3s ease-in-out;
 }
 
-/* サイドバー開閉ボタン */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🌟 サイドバー開閉ボタン */
 #sidebarToggle {
     display: none;
     background: none;
@@ -125,9 +134,10 @@ main {
     font-size: 24px;
 }
 
+/* 🌟 レスポンシブ対応 */
 @media (max-width: 768px) {
     aside {
-        position: absolute;
+        position: fixed;
         left: -250px;
         top: 60px;
         height: calc(100% - 60px);
